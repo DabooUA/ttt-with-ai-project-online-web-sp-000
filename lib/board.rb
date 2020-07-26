@@ -19,7 +19,7 @@ class Board
     @cells = Array.new(9, " ")
   end
 
-  def input_to_index(user_input)
+  def input_to_index(input)
     cells[input.to_i - 1]
   end
 
