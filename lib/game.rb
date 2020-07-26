@@ -66,16 +66,22 @@ class Game
     end
   end
 
-  def play
-    until over? == true
+  ddef play
+    while !over?
       turn
     end
-
     if won?
       puts "Congratulations #{winner}!"
+      @board.display
     elsif draw?
       puts "Cat's Game!"
-
+      @board.display
+      # binding.pry
+    end
+    puts "Would you like to play again? (y/n)"
+    input = gets.chomp
+    if input == "y"
+      Game.start
     end
   end
 
