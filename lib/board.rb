@@ -36,7 +36,7 @@ class Board
   end
 
   def valid_move? (index)
-    !taken?(index) && input.to_i.between?(1, 9)
+    !taken?(index) && index.to_i.between?(1, 9)
     index.between?(0,8) && !position_taken?(index)
   end
 
