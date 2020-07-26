@@ -23,8 +23,7 @@ class Game
   def move(index, current_player)
     @board[index] = current_player
   end
-
-
+  
   def current_player
     @board.turn_count % 2 == 0 ? player_1 : player_2
   end
