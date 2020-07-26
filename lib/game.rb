@@ -70,18 +70,17 @@ class Game
     until over?
       turn
     end
-    if won?
-      puts "Congratulations #{winner}!"
-      #@board.display
-    elsif draw?
-      puts "Cat's Game!"
-      #@board.display
+    if over?
+      if winner == "X"
+        puts "Congratulations X!"
+      elsif winner == "O"
+        puts "Congratulations O!"
+      elsif draw?
+        puts "Cat's Game!"
+      end
     end
-    puts "Would you like to play again? (y/n)"
-    input = gets.chomp
-    if input == "y"
-      Game.start
-    end
+
+
     def self.start
     puts "Would you like to play 0, 1, or 2 player mode?"
       input = gets.strip
