@@ -27,7 +27,7 @@ class Board
   end
 
   def reset!
-
+    board.clear
   end
 
 end
