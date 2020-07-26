@@ -1,4 +1,4 @@
-module Ai
+module Player
 
     class Computer < Player
 
