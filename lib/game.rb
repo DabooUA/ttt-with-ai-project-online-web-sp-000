@@ -72,7 +72,7 @@ class Game
     end
     if won?
       puts "Congratulations #{winner}!"
-      @board.display
+      #@board.display
     elsif draw?
       puts "Cat's Game!"
       @board.display
