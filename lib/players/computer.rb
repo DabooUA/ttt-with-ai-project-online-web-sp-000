@@ -40,7 +40,7 @@ module Ai
       end
       move
     end
-  
+
   end
 
 end
