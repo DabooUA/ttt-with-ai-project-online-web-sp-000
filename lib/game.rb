@@ -12,13 +12,6 @@ class Game
     return a || b
   end
 
-  def input_to_index(user_input)
-    user_input.to_i - 1
-  end
-
-  def position_taken?(index)
-    !(@board[index].nil? || @board[index] == " ")
-  end
 
   def move(index, current_player)
     @board[index] = current_player
