@@ -40,6 +40,8 @@ class Board
     #index.between?(0,8) && !position_taken?(index)
   end
 
-
+  def update(input, player)
+    cells[input.to_i - 1] = player.token
+  end
 
 end
