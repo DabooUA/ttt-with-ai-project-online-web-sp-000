@@ -80,7 +80,6 @@ class Game
       end
     end
 
-
     def self.start
     puts "Would you like to play 0, 1, or 2 player mode?"
       input = gets.strip
