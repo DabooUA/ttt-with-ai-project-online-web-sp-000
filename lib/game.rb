@@ -76,7 +76,6 @@ class Game
     elsif draw?
       puts "Cat's Game!"
       @board.display
-      # binding.pry
     end
     puts "Would you like to play again? (y/n)"
     input = gets.chomp
