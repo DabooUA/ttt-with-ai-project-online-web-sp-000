@@ -32,7 +32,7 @@ class Board
   end
 
   def taken?(index)
-    !(@board[index].nil? || @board[index] == " ")
+    !(@cells[index].nil? || @cells[index] == " ")
   end
 
 
