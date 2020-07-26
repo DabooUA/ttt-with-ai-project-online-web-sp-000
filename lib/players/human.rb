@@ -1,1 +1,3 @@
 class Human<Player
+
+end
