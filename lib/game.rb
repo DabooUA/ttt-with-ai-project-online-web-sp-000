@@ -45,6 +45,14 @@ class Game
     won? || draw?
   end
 
+  def winner
+    if winning_combination = won?
+      @board[won?[0]] == "X" ? "X" : "O"
+    else
+      nil
+    end
+  end
+
 
   def turn
     puts "Please enter 1-9:"
@@ -56,14 +64,6 @@ class Game
     display_board
   else
     turn
-    end
-  end
-
-  def winner
-    if won?
-      @board[won?[0]] == "X" ? "X" : "O"
-    else
-      nil
     end
   end
 
