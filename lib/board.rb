@@ -26,7 +26,7 @@ class Board
     @display
   end
 
-  def selfreset!
+  def self.reset!
     board.clear
   end
 
