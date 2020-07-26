@@ -66,7 +66,7 @@ class Game
     end
   end
 
-  ddef play
+  def play
     while !over?
       turn
     end
@@ -82,6 +82,6 @@ class Game
     if input == "y"
       Game.start
     end
-  
+  end
 
 end
