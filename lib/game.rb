@@ -41,6 +41,10 @@ class Game
      !won? && @board.full?
   end
 
+  def over?
+    won? || draw?
+  end
+
 
   def turn
     puts "Please enter 1-9:"
@@ -52,14 +56,6 @@ class Game
     display_board
   else
     turn
-    end
-  end
-
-  def over?
-    if won? || draw?
-      true
-    else
-      false
     end
   end
 
