@@ -47,7 +47,7 @@ class Game
 
   def winner
     if winning_combination = won?
-      @board[won?[0]] == "X" ? "X" : "O"
+      @winner = @board.cells[winning_combination.first]
     else
       nil
     end
