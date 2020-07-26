@@ -75,7 +75,7 @@ class Game
       #@board.display
     elsif draw?
       puts "Cat's Game!"
-      @board.display
+      #@board.display
     end
     puts "Would you like to play again? (y/n)"
     input = gets.chomp
