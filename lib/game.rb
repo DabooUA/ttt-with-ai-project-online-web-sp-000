@@ -39,15 +39,7 @@ class Game
    turn_count % 2 == 0 ? "X" : "O"
   end
 
-  def turn_count
-      count = 0
-      @board.each do |spaces|
-        if spaces == "X" || spaces == "O"
-          count += 1
-        end
-      end
-    return count
-  end
+  
 
   def turn
     puts "Please enter 1-9:"
@@ -62,9 +54,7 @@ class Game
     end
   end
 
-    def full?
-      @board.all? {|cell| cell == "X" || cell == "O"}
-    end
+    
 
     def draw?
       if !won?&& full?
