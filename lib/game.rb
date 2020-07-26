@@ -14,7 +14,7 @@ class Game
                     [0,4,8],
                     [2,4,6]
                   ]
-                  
+
   def initialize(player_1 = Players::Human.new("X"), player_2 = Players::Human.new("O"), board = Board.new)
     @board = board
     @player_1 = player_1
@@ -82,6 +82,44 @@ class Game
     if input == "y"
       Game.start
     end
+    def self.start
+    puts "Would you like to play 0, 1, or 2 player mode?"
+      input = gets.strip
+      player_1 = nil
+      player_2 = nil
+
+    if input == "0"
+      player_1 = Players::Computer.new("O")
+      player_2 = Players::Computer.new("X")
+      Game.new(player_1, player_2).play
+
+
+    elsif input == "1"
+      puts "Great! Would you like to go 'first' and be X or 'second' and be O?"
+      input_player = gets.strip
+      if input_player == "first"
+        player_1 = Players::Human.new("X")
+        player_2 = Players::Computer.new("O")
+      else
+        player_1 = Players::Computer.new("X")
+        player_2 = Players::Human.new("O")
+      end
+      Game.new(player_1, player_2).play
+
+    elsif input == "2"
+      puts "Okay, two player mode it is!"
+      puts "Great! Would you like to go 'first' and be X or 'second' and be O?"
+      input_player = gets.strip
+      if input_player == "first"
+        player_1 = Players::Human.new("X")
+        player_2 = Players::Human.new("O")
+      else
+        player_1 = Players::Human.new("X")
+        player_2 = Players::Human.new("O")
+      end
+      Game.new(player_1, player_2).play
+    end
+  end
   end
 
 end
