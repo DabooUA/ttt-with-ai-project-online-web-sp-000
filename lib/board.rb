@@ -27,7 +27,7 @@ class Board
   end
 
   def turn_count
-    @cells.count{|c| c == "X" || c == "O"}
+    @cells.count{|t| t == "X" || t == "O"}
   end
 
   def taken?(index)
