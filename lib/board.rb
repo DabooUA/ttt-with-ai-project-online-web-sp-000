@@ -31,7 +31,7 @@ class Board
     @cells.count{|c| c == "X" || c == "O"}
   end
 
-  def position(index)
+  def taken?(index)
     !(@board[index].nil? || @board[index] == " ")
   end
 
