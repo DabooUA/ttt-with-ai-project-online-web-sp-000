@@ -82,6 +82,6 @@ class Game
     if input == "y"
       Game.start
     end
-  end
+  
 
 end
