@@ -4,7 +4,7 @@ class Board
 
   def initialize
     reset!
-    #@board = board || Array.new(9, " ")
+    #@board = board ||
   end
 
   def display
@@ -15,8 +15,8 @@ class Board
     puts " #{cells[6]} | #{cells[7]} | #{cells[8]} "
   end
 
-  def self.reset!
-    board.clear
+  def reset!
+    @cells = Array.new(9, " ")
   end
 
   def input_to_index(user_input)
