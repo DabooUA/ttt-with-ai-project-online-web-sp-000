@@ -32,8 +32,13 @@ class Board
   end
 
   def taken?(index)
-    !(@cells[index].nil? || @cells[index] == " ")
+    position(index) == "X" || position(index) == "O"
   end
+
+  def valid_move? (index)
+    index.between?(0,8) && !position_taken?(index)
+  end
+
 
 
 end
