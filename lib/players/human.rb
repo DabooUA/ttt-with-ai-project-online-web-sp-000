@@ -1,7 +1,8 @@
 class Human < Player
 
-  def move(index, current_player)
-    cells[index] = current_player
+  def move(board)
+      puts "Please enter 1-9:"
+      gets.strip
+    end
   end
-
 end
