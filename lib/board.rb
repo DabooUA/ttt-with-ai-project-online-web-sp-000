@@ -4,7 +4,6 @@ class Board
 
   def initialize
     reset!
-    #@board = board ||
   end
 
   def display
