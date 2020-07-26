@@ -117,8 +117,8 @@ class Game
         player_2 = Players::Human.new("O")
       end
       Game.new(player_1, player_2).play
+      end
     end
   end
-end
 
 end
