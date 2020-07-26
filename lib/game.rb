@@ -37,6 +37,10 @@ class Game
     end
   end
 
+  def draw?
+     !won? && @board.full?
+  end
+
 
   def turn
     puts "Please enter 1-9:"
