@@ -30,4 +30,13 @@ class Board
     board.clear
   end
 
+  def input_to_index(user_input)
+    user_input.to_i - 1
+  end
+
+  def position(index)
+    !(@board[index].nil? || @board[index] == " ")
+  end
+
+
 end
