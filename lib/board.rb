@@ -26,4 +26,8 @@ class Board
     @display
   end
 
+  def reset!
+
+  end
+
 end
