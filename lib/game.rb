@@ -39,7 +39,7 @@ class Game
    turn_count % 2 == 0 ? "X" : "O"
   end
 
-  
+
 
   def turn
     puts "Please enter 1-9:"
@@ -54,7 +54,7 @@ class Game
     end
   end
 
-    
+
 
     def draw?
       if !won?&& full?
