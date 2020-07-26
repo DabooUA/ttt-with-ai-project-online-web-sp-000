@@ -1,4 +1,4 @@
-module AI
+module Complex
 
     class Computer < Player
 
