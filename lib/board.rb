@@ -23,6 +23,10 @@ class Board
     cells[input.to_i - 1]
   end
 
+  def full?
+    @board.all? {|cell| cell == "X" || cell == "O"}
+  end
+
   def position(index)
     !(@board[index].nil? || @board[index] == " ")
   end
