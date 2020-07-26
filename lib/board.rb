@@ -20,7 +20,7 @@ class Board
   end
 
   def input_to_index(input)
-    cells[input.to_i - 1]
+    @cells[input.to_i - 1]
   end
 
   def full?
