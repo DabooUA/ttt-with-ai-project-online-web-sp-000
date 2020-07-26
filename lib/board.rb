@@ -28,6 +28,7 @@ class Board
   end
 
   def turn_count
+    cells.count{|t| t == "X" || t == "O"}
       count = 0
       @board.each do |spaces|
         if spaces == "X" || spaces == "O"
